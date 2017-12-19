@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Private Life</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="framework.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
+      
+    <header>
+        <div id="img">
+            <img class="img-responsive"  style="width:25%; height:25%; display: block; margin: auto;" src="img/private_life.jpg" />
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                  </button>
+                  <a class="navbar-brand" href="index.html">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="vpn.html">VPN</a></li>
+                    <li><a href="tor.html">Tor</a></li>
+                    <li><a href="dns.html">Virtual Machine</a></li> 
+                    <li><a class='active' href="bitcoin.html">Bitcoin</a></li> 
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <body>
+        
+        <h1 class='title'>Welcome to Private Life</h1>
+        <br/>
+        <div class='section1 container-fluid'>
+            <div class='row'>
+                <div class='col-sm-12 col-md-6'>
+                    <h3 class='title'>What are Bitcoin</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/l9jOJk30eQs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class='col-sm-12 col-md-6'>
+                    <h3 class='title'>Why use them</h3>
+                    <ul>
+                        <li>Pretty much anonymous</li>
+                        <li>People can’t steal your payment information from merchants</li>
+                        <li>Bitcoin was designed with your privacy in mind</li>
+                        <li>Bitcoin is not subject to inflation</li>
+                        <li>Bitcoin provides financial freedom</li>
+                        <li>It is one of the only way to purchase things on .onion site</li>
+                        <li>You can create your own money by <a href='https://www.coindesk.com/information/how-to-set-up-a-miner/'>mining</a> them</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class='section2 container-fluid'>
+            <div class= 'row'>
+                <div id='vpn' class='col-xs-12 col-sm-6'>
+                   
+                    <ol> <h3>Places where you can buy bitcoins </h3>
+                        <li><a href='https://spectrocoin.com/en/signup.html?referralId=519261312'>SpectroCoin</a></li>
+                        <li><a href='localbitcoins.com'>LocalBitcoins</a></li>
+                        <li><a href='https://www.kraken.com/'>Kraken</a></li>
+                        <li><a href='https://www.coinbase.com'>Coinbase</a></li>
+                        <li><a href='https://www.coinmama.com/'>Coinmama</a></li>
+                        <li>
+                            La Maison du Bitcoin (35 Rue du Caire, 75002 Paris France)
+                            <div id="map" style="width:400px;height:400px;background:yellow"></div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </body>
+    <hr/>
+    
+    
+    <footer class=" footer footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4> Follow Us </h4>
+                    <p> Follow us in social media</p>
+                    <div class="socal-media">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a> 
+                        <a href="#"><i class="fa fa-linkedin"></i></a> 
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4> Overview </h4>
+                    <div class="overview">
+                        <ul>
+                            <li><a href="vpn.html">VPN</a></li>
+                            <li><a href="tor.html">Tor</a></li>
+                            <li><a href="vm.html">Virtual Machine</a></li>
+                            <li><a href="bitcoin.html">Bitcoin</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4> Contact Us </h4>
+                    <div class="comtactus">
+                        <ul>
+                            <li>
+                                <a href="#"  title="FR Web Site Development"><img class="flag" src="img/french-flag.gif"> +3361234567890</a>
+                            </li>
+                            <li class="email">
+                                <a href="mailto:a000@aup.edu">
+                                    <img src="img/mail-icon.png"> a0000@aup.edu </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="sub-footer" style="text-align:center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        Copyright © 2017 <a href="#"> Private Life</a>, All Rights Reserved.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</html>
+
+<script>
+			function myMap() {
+			    var uluru = {lat:48.867671, lng:2.349938}
+			    var mapOptions = {
+			        center: uluru,
+			        zoom: 20,
+			        //mapTypeId: google.maps.MapTypeId.HYBRID
+			    }
+			    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+			    var marker = new google.maps.Marker({
+			          position: uluru,
+			          map: map
+			        });
+			}
+		</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnLD2jtt3MGtVLIF1hrunB-AVjytydjA4&callback=myMap"></script>

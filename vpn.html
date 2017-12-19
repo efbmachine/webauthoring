@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Private Life</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="framework.css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Add icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      </head>
+      
+    <header>
+        <div id="img">
+            <img class="img-responsive"  style="width:25%; height:25%; display: block; margin: auto;" src="img/private_life.jpg" />
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                  </button>
+                  <a class="navbar-brand" href="index.html">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a class='active' href="vpn.html">VPN</a></li>
+                    <li><a href="tor.html">Tor</a></li>
+                    <li><a href="vm.html">Virtual Machine</a></li> 
+                    <li><a href="bitcoin.html">Bitcoin</a></li> 
+                  </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <body>
+        
+        <h1 class='title'>Welcome to Private Life</h1>
+        <br/>
+        <div class='section1 container-fluid'>
+            <div class='row'>
+                <div class='col-sm-12 col-md-6'>
+                    <h3 class='title'>What is a VPN</h3>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/DhYeqgufYss" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <div class='col-sm-12 col-md-6'>
+                    <h3 class='title'>Why use one</h3>
+                    <ul>
+                        <li>Torrent whitout fear of getting caught</li>
+                        <li>Access a Business Network While Travelling</li>
+                        <li>Access Your Home Network While Travelling</li>
+                        <li>Hide Your Browsing Activity From Your Local Network and ISP</li>
+                        <li>Access Geo-Blocked Websites</li>
+                        <li>Bypass Internet Censorship</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class='section2 container-fluid'>
+            <div class= 'row'>
+                <div id='vpn' class='col-xs-12 col-sm-6'>
+                   
+                    <ol> <h3>Top 5 paid VPN </h3> <input id='button' type="button" value="See free vpn" onclick="change();">
+                        <li>NordVPN <span class='number'>3.29$</span></li>
+                        <li>PureVPN <span class='number'>2.95$</span></li>
+                        <li>Private Internet Acecess VPN <span class='number'>3.33$</span></li>
+                        <li>KeepSolid VPN Unlimited <span class='number'>8.99$</span></li>
+                        <li>TunnelBear VPN <span class='number'>4.99$</span></li>
+                    </ol>
+                </div>
+            </div>
+            <p>If you want a vpn to do illegal stuff you should be looking for a vpn that does not keep logs</p>
+        </div>
+    </body>
+    <hr/>
+    
+    
+    <footer class=" footer footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4> Follow Us </h4>
+                    <p> Follow us in social media</p>
+                    <div class="socal-media">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google"></i></a> 
+                        <a href="#"><i class="fa fa-linkedin"></i></a> 
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4> Overview </h4>
+                    <div class="overview">
+                        <ul>
+                            <li><a href="vpn.html">VPN</a></li>
+                            <li><a href="tor.html">Tor</a></li>
+                            <li><a href="vm.html">Virtual Machine</a></li>
+                            <li><a href="bitcoin.html">Bitcoin</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <h4> Contact Us </h4>
+                    <div class="comtactus">
+                        <ul>
+                            <li>
+                                <a href="#"  title="FR Web Site Development"><img class="flag" src="img/french-flag.gif"> +3361234567890</a>
+                            </li>
+                            <li class="email">
+                                <a href="mailto:a000@aup.edu">
+                                    <img src="img/mail-icon.png"> a0000@aup.edu </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="sub-footer" style="text-align:center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        Copyright © 2017 <a href="#"> Private Life</a>, All Rights Reserved.
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</html>
+
+<script>
+    var free = true;
+    var change = () =>{
+        if (free){
+            document.getElementById('vpn').innerHTML = `
+            
+            <ol> <h3>Top 5 free VPN </h3><input id='button' type="button" value="See Paid vpn" onclick="change();">
+                        <li>TunnelBear VPN</li>
+                        <li>CyberGhost</li>
+                        <li>ExpressVPN</li>
+                        <li>Hide.me</li>
+                        <li>Surfeasy</li>
+                    </ol> `;
+                    free=false;
+        } else{
+             document.getElementById('vpn').innerHTML = ` 
+             <ol> <h3>Top 5 paid VPN </h3><input id='button' type="button" value="See Free vpn" onclick="change();">
+                        <li>NordVPN <span class='number'>3.29$</span></li>
+                        <li>PureVPN <span class='number'>2.95$</span></li>
+                        <li>Private Internet Acecess VPN <span class='number'>3.33$</span></li>
+                        <li>KeepSolid VPN Unlimited <span class='number'>8.99$</span></li>
+                        <li>TunnelBear VPN <span class='number'>4.99$</span></li>
+                    </ol>`;
+            free=true;
+        }
+    };
+    
+</script>
